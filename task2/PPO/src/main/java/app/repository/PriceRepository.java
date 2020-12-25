@@ -18,7 +18,7 @@ public class PriceRepository implements IRestRepository<Price> {
             "FROM Prices " +
             "ORDER BY id";
 
-    private static String selectByIdQuery = "SELECT id, product_id, price" +
+    private static String selectByIdQuery = "SELECT id, product_id, price " +
             "FROM Prices " +
             "WHERE id = ?";
 

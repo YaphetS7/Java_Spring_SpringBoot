@@ -1,15 +1,14 @@
 package app.controller;
 
-
 import app.entity.Customer;
 import app.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
-
+@CrossOrigin(origins = { "http://localhost:8888" })
 @RestController
-@RequestMapping("app/customers")
+@RequestMapping("/customers")
 public class CustomerController {
 
     @Autowired

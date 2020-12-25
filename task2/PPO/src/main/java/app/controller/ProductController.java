@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
+
+@CrossOrigin(origins = { "http://localhost:8888" })
 @RestController
-@RequestMapping("app/products")
+@RequestMapping("/products")
 public class ProductController {
 
     @Autowired
